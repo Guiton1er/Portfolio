@@ -5,35 +5,281 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="./assets/favicon-32x32.png">
     <title>Portfolio</title>
 </head>
 
 <body class="bg-light">
-    <!-- Header -->
-    <header class="bg-primary text-white py-3">
-        <nav class="container d-flex justify-content-between align-items-center">
-            <h1 class="h3">Mon Portfolio</h1>
-            <a href="#" class="btn btn-outline-light">Home</a>
-        </nav>
-    </header>
+
+    <video id="background-video" autoplay loop muted>
+        <source src="./assets/background_home.mp4" type="video/mp4">
+    </video>
+
+    <nav class="bg-dark">
+        <header>
+            <h1><strong>Gaël BAHIER</strong></h1>
+        </header>
+        <div>
+            <a href="#accueil">Accueil</a>
+            <a href="#profil">Profil</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#stages">Stages</a>
+            <a href="#bts-sio">BTS SIO</a>
+            <a href="#competences">Compétences</a>
+            <a href="#veille-techno">Veille technologique</a>
+            <a href="#contact">Contact</a>
+            <a href="./connexion.html" id="login-link">Connection</a>
+        </div>
+        <footer>
+            <p>Tous droits réservés © 2024</p>
+        </footer>
+    </nav>
+
+    <section id="accueil">
+        <div class="accueil d-flex flex-column justify-content-center align-items-center text-white">
+            <p class="gradient">GAËL BAHIER</p>
+            <p>ÉTUDIANT EN BTS SIO - OPTION SLAM</p> 
+        </div>
+    </section>
 
     <!-- Main Content -->
-    <main class="container my-5">
-        <div class="text-center">
-            <h1 class="mb-4 text-primary">Titre</h1>
-            <p class="lead text-secondary">
-                Blablabla... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac lorem vel elit consectetur
-                tincidunt.
-            </p>
-        </div>
+    <main class="bg-white">
+        <section id="profil">
+            <div class="text-center py-3">
+                <p class="mb-4 h1">Présentation</p>
+                <div>
+                    <p class="text-content">
+                        Je suis Gaël BAHIER, je suis étudiant à l'IIA (Institut d'Informatique Appliquée) à Saint-Berthevin en BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métiers).
+                        Passionné par le développement et les nouvelles technologies, j'étudie dans la conception et la programmation d’applications adaptées aux besoins des entreprises afin de faire grandir mes compétences.
+                    </p>
+                </div>
+                <a href="/assets/CV_Gaël_BAHIER.pdf" class="btn-cv" target="_blank">Voir le CV</a>
+            </div>
+        </section>
+
+        <section id="parcours">
+            <p class="mb-4 h1">Mon Parcours<p>
+            <ul>
+                <li style="--accent-color:#41516C">
+                    <p class="date">2016-2019</p>
+                    <p class="title">Collège Saint Joseph</p>
+                    <p class="descr">
+                        Collège Privé à Ernée en Mayenne (53) : De la 6ème à la 4ème générale.
+                    </p>
+                </li>
+                <li style="--accent-color:#FBCA3E">
+                    <p class="date">2019-2020</p>
+                    <p class="title">Collège Immaculée-Conception</p>
+                    <p class="descr">
+                        Institution de l'Immaculée-Conception - Collège à Laval en Mayenne (53) : 3ème générale. Brevet obtenu avec controle continu pour cause de COVID-19.
+                    </p>
+                </li>
+                <li style="--accent-color:#E24A68">
+                    <p class="date">2020 - 2023</p>
+                    <p class="title">Lycée Immaculée-Conception</p>
+                    <p class="descr">
+                        Institution de l'Immaculée-Conception - Lycée à Laval en Mayenne (53) : De la Seconde à la Terminale Générale.
+                        Bac obtenu avec Mention Assez-Bien (Spécialités : NSI - Numérique et science de l'informatique , Mathématiques).
+                    </p>
+                </li>
+                <li style="--accent-color:#1B5F8C">
+                    <p class="date">2023 - 2025</p>
+                    <p class="title">Institut Informatique Appliquée</p>
+                    <p class="descr">
+                        IIA à Saint-Berthevin en Mayenne (53) : BTS SIO option SLAM
+                    </p>
+                </li>
+                <li style="--accent-color:#4CADAD">
+                    <p class="date">2025 - ...</p>
+                    <p class="title">Objectif Futur</p>
+                    <p class="descr">
+                        IIA à Saint-Berthevin en Mayenne (53) : Licence dev
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="stages">
+            <p class="mb-4 h1">Mes Stages</p>
+            <ul>
+                <li style="--accent-color:#D2A678">
+                    <p class="date">8 Avril 2024 - 7 Juin 2024</p>
+                    <p class="title">Les Jardins de Maryline</p>
+                    <p class="descr">
+                        Stage de première année aux Jardins de Maryline : Maintenance du logiciel en php de gestion de l'entreprise, Création de solution pour de la publicité.
+                    </p>
+                </li>
+                <li style="--accent-color:#166F0C">
+                    <p class="date">7 Janvier 2025 - 28 Février 2025</p>
+                    <p class="title">SPPP (Société De Peinture De Pièces Plastiques)</p>
+                    <p class="descr">
+                        Stage de deuxième année à SPPP (Société De Peinture De Pièces Plastiques) nouvellement appellée Alpha France : Création d'un ERP pour l'entreprise dans la gestion des lignes de production, évolution des besoins de l'ERP.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="bts-sio">
+            <h1 class="mb-4 h1 text-center">Le BTS SIO, c'est quoi ?</h1>
+            <div>
+                <p>Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2. Il forme des experts en informatique, compétents aussi bien en développement qu'en administration et maintenance des réseaux informatiques.</p>
+                <div class="bts-options">
+                    <div class="bts-option">
+                        <h3>Option SLAM</h3>
+                        <p>
+                            L’option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d’un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).
+Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de :
+                            <ul>
+                                <li>Développeur d’applications informatiques</li>
+                                <li>Développeur informatique</li>
+                                <li>Analyste d’applications ou d’études</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="bts-option">
+                        <h3>Option SISR</h3>
+                        <p>L’option Solutions d’infrastructure, systèmes et réseaux prépare des spécialistes en réseaux et équipements informatiques (installation, maintenance, sécurité). En obtenant un BTS SIO option SISR, vous serez en mesure de gérer et administrer le réseau d’une organisation tout en garantissant sa sécurité et sa maintenance.
+                            Les titulaires du BTS SIO option SISR peuvent exercer les métiers suivants :
+                            <ul>
+                                <li>Administrateur systèmes et réseaux</li>
+                                <li>Informaticien support et déploiement</li>
+                                <li>Pilote d’exploitation</li>
+                                <li>Support systèmes et réseaux</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <p class="mb-4 h1">Mes Compétences</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Gérer le patrimoine informatique</th>
+                        <th>Répondre aux incidents et aux demandes d’assistance et d’évolution</th>
+                        <th>Développer la présence en ligne de l’organisation</th>
+                        <th>Travailler en mode projet</th>
+                        <th>Mettre à disposition des utilisateurs un service informatique</th>
+                        <th>Organiser son développement professionnel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="section-header">
+                        <td colspan="7">Réalisations en cours de formation</td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio</td>
+                        <td></td>
+                        <td></td>
+                        <td class="is-true"></td>
+                        <td></td>
+                        <td></td>
+                        <td class="is-true"></td>
+                    </tr>
+                    <tr>
+                        <td>GLPI</td>
+                        <td class="is-true"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="section-header">
+                        <td colspan="7">Réalisations en milieu professionnel en cours de première année</td>
+                    </tr>
+                    <tr>
+                        <td>Programme d'envoi publicitaire</td>
+                        <td></td>
+                        <td class="is-true"></td>
+                        <td></td>
+                        <td></td>
+                        <td class="is-true">
+                            <button class="btn" onclick="openPopup()">Afficher les images</button>
+
+                            <div class="popup" id="imagePopup" onclick="closePopup(event)">
+                                <span class="close-btn" onclick="closePopup(event)">&times;</span>
+                                <button class="prev" onclick="prevImage(event)">&#10094;</button>
+                                <img id="popupImage" src="" alt="Image en Pop-up">
+                                <button class="next" onclick="nextImage(event)">&#10095;</button>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="section-header">
+                        <td colspan="7">Réalisations en milieu professionnel en cours de deuxième année</td>
+                    </tr>
+                    <tr>
+                        <td>ERP SPPP</td>
+                        <td></td>
+                        <td class="is-true"></td>
+                        <td></td>
+                        <td class="is-true"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="veille-techno">
+            <p class="mb-4 h1">Ma Veille Technologique</p>
+            <div class="vt-options">
+                <div class="vt-option">
+                    <h4>Underscore</h4>
+                    <p></p>
+                </div>
+                <div class="separator"></div>
+                <div class="vt-option">
+                    <h4>Google Actualités</h4>
+                    <p></p>
+                </div>
+                <div class="separator"></div>
+                <div class="vt-option">
+                    <h4>Graphikart</h4>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p class="mb-4 h1">Contact</p>
+            <div>
+                <address>
+                    <div>
+                        <p>Localisation : </p>
+                        <p>53000 Laval, France</p>
+                    </div>
+                    <div>
+                        <p>Email : </p>
+                        <p><a href="mailto:bahiergael@gmail.com">bahiergael@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <p>Téléphone : </p>
+                        <p><a href="tel:+33636058152">06 36 05 81 52</a></p>
+                    </div>
+                </address>
+
+                <form action="POST">
+                    <div>
+                        <input name="nom" type="text" class="form-control" required placeholder="Nom">
+                        <input name="prenom" type="text" class="form-control" required placeholder="Prénom">
+                    </div>
+                    <input name="titre" type="text" class="form-control" required placeholder="Titre">
+                    <textarea name="message" class="form-control" rows="4" required placeholder="Contenu du message ..."></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">Tous droits réservés © 2024</p>
-    </footer>
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<script src="./js/script.js"></script>
 
 </html>
