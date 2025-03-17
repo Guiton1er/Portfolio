@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const images = [
     "./assets/mail-example.png",
-    "./assets/favicon-32x32.png"
+    "./assets/SMS-form.png"
 ];
 
 let currentIndex = 0;

@@ -509,6 +509,7 @@ body {
 
 table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   background: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -538,13 +539,8 @@ tr:nth-child(even) {
 
 /* Style du bouton */
 #competences .btn {
-  padding: 10px 20px;
   color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.3s;
 }
 
 /* Style du pop-up */
@@ -614,7 +610,6 @@ tr:nth-child(even) {
 ***********************************************************************************************************/
 
 #bts-sio {
-  max-width: 900px;
   margin: auto;
 }
 
@@ -847,11 +842,14 @@ body {
 }
 
 #veille-techno .vt-option {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 20px;
   background: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
 }
 
 #veille-techno .vt-option h4 {
@@ -860,7 +858,26 @@ body {
 }
 
 #veille-techno .separator {
-  width: 3px;
+  width: 10px;
   background: var(--bleu-paon);
   border-radius: 8px;
+}
+
+#veille-techno .btn-src {
+  padding: 12px 20px;
+  background-color: var(--bleu-paon);
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 500ms;
+}
+
+#veille-techno .btn-src:hover {
+  transition: 500ms;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
 }
