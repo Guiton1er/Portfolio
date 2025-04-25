@@ -544,7 +544,7 @@ tr:nth-child(even) {
 }
 
 /* Style du pop-up */
-#competences .popup {
+.popup {
   display: none;
   position: fixed;
   top: 0;
@@ -557,7 +557,7 @@ tr:nth-child(even) {
   z-index: 5;
 }
 
-#competences .popup img {
+.popup img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
@@ -573,7 +573,7 @@ tr:nth-child(even) {
 }
 
 /* Bouton de fermeture */
-#competences .close-btn {
+.close-btn {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -584,7 +584,7 @@ tr:nth-child(even) {
 }
 
 /* Boutons suivant/précédent */
-#competences .prev, #competences .next {
+.prev, .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -598,10 +598,10 @@ tr:nth-child(even) {
   z-index: 5;
 }
 
-#competences .prev { left: 10px; }
-#competences .next { right: 10px; }
+.prev { left: 10px; }
+.next { right: 10px; }
 
-#competences .prev:hover, #competences .next:hover {
+.prev:hover, .next:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
